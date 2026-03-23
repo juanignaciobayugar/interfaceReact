@@ -1,0 +1,53 @@
+
+
+.header {
+  display: grid;
+  grid-template-rows: auto auto; /* dos filas: logo y botones */
+  justify-items: center;         /* centra horizontalmente cada hijo */
+  align-items: center;           /* centra verticalmente cada fila */
+  width: 100%;
+  background-color: #272525;
+  height: auto;
+  gap: 1rem;
+}
+
+.btn.activo {
+  background: #848c8e; /* igual que hover */
+
+}
+
+
+.logoSpoti {
+    width: 10%;
+    display: flex;
+    padding: 5px;
+}
+
+
+.logoSpoti img {
+  width: 100%;
+}
+
+.botonera {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+    font-family: 'Squada One', sans-serif;
+  margin: 8px;
+  color: rgb(237, 236, 210);
+  background-color: #001f3f;
+  width: 10rem;
+  height: 2.3rem;
+  font-size: 1.3rem;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 2px;
+}
+
+.btn:hover {
+  background: #dbe64c;
+}

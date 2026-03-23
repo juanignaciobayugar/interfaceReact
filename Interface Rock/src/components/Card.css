@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+
+.main {
+  display: grid;
+  justify-items: center;         /* centra horizontalmente cada hijo */
+  align-items: center;           /* centra verticalmente cada fila */
+  width: 100%;          /* ocupa todo el ancho */
+  min-height: 100vh;      /* opcional: ocupa toda la altura de la ventana */
+  background-color:black;
+}
+
+.contenedorTarjeta{
+    display: flex;
+  flex-direction: row;   /* en escritorio: fila */
+}
+
+.quincePorciento1 {
+   display: grid;
+     justify-items: center;         /* centra horizontalmente cada hijo */
+  align-items: center;           /* centra verticalmente cada fila */
+   flex: 0 0 25%;
+  padding: 1.5rem;
+  background-color: #adac54;
+  color: #F4F2Ef;
+  height: auto;
+  font-family: 'Nova Square', serif;
+}
+
+.cassette {
+  width: 200px;
+}
+
+.moustro {
+  width: 300px;
+}
+
+
+.carousel-container {
+   flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+
+.logo{
+    width: 40%;
+}
+
+.imagenBanda{
+    width: 70%;
+}
+
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 700px;              /* 👈 ancho igual al de una card */
+  scrollbar-width: none;     /* oculta barra en Firefox */
+}
+.carousel::-webkit-scrollbar {
+  display: none;             /* oculta barra en Chrome/Safari */
+}
+
+.card {
+  flex: 0 0 700px;           /* 👈 ancho fijo de cada card */
+  scroll-snap-align: center; /* se centra en el viewport */
+  text-align: center;
+
+  border-radius: 8px;
+  padding: 1rem;
+  background: #213E60;
+
+}
